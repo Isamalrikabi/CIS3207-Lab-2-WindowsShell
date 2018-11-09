@@ -1,0 +1,48 @@
+Hieu Khuong - TUID 915399644
+Lab 2 - CIS3207
+	myshell - a simple version of the Windows command prompt
+
+	
+LIST OF BUILT-IN COMMANDS
+    
+    clr     Clear the screen.
+    
+    environ List all the environment strings.
+
+    ls      List the contents of a directory.
+
+	echo    Followed by a string and print that string onto the screen with a newline character.
+
+    help    Display the user manual.
+
+    cd      Change the current directory to the one specified after the command. If the directory specified does not exist
+            report an error. If there is no argument, change to $HOME.
+    
+	pause   Pause the operation of the shell until <CR> is pressed
+
+    export  Followed by a key=value pair, add new environment variables.
+
+	quit    Quit the shell.
+
+I/O REDIRECTION
+        
+		Output of one command can be chained to the input of another command. The syntax is as follow:
+            $ command1 | command2
+        where command1 sends data through pipe to command2.
+
+        
+		Output of commands can be redirected from stdout to a file with a symbol:
+            $ command > outputfile
+        In this case, the output of command is redirected to outfile, if file does not exist then the shell will create one.
+
+        
+		Input of commands can be from a file:
+            $ command < infile
+        The command takes input from infile.
+
+BACKGROUND PROCESS
+        
+        To run a program in background, add '&' after the command name, such as:
+            $ [command]&
+        The process runs silently in background and the user can use the shell.
+
